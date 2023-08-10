@@ -28,7 +28,7 @@ export default function HomePage() {
 
         {/* Reply Example */}
 
-        {comments.map((comment) => (
+        {comments.map((comment,i) => (
           <Comment
             key={i}
             userImagePath={comment.userImagePath}
