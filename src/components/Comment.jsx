@@ -5,7 +5,7 @@ export const Comment = ({
   commentText,
   likeNum,
   replies,
-})=> {
+}) => {
   const showlike = likeNum > 0 ? true : false;
   return (
     <div>
@@ -26,10 +26,12 @@ export const Comment = ({
           </span>
           <br />
           <span style={{ color: "#E4E6EB" }}>{commentText}</span>
-          {showlike&&(<div className="d-flex align-items-center gap-1">
-            <img src="/like.svg" width={20}></img>
-            <span style={{ color: "#B0B3B8" }}>{likeNum}</span>
-          </div>)}
+          {showlike && (
+            <div className="d-flex align-items-center gap-1">
+              <img src="/like.svg" width={20}></img>
+              <span style={{ color: "#B0B3B8" }}>{likeNum}</span>
+            </div>
+          )}
         </div>
       </div>
 
