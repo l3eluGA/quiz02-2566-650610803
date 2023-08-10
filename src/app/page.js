@@ -16,16 +16,26 @@ export default function HomePage() {
         className="mx-auto p-3 rounded rounded-3 shadow-sm"
       >
         {/* Post Owner Example*/}
-        <PostOwner name="Rungthip Phongsupasa" studentId="650610803" userImagePath="/profileImages/vanda.jpg" text="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"/>
+        <PostOwner
+          name="Rungthip Phongsupasa"
+          studentId="650610803"
+          userImagePath="/profileImages/vanda.jpg"
+          text="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
+        />
 
         {/* Comment Example */}
 
         {/* Reply Example */}
-        
 
-        {comments.map((comment)=>
-        <Comment userImagePath={comment.userImagePath} username={comment.username} commentText={comment.commentText} likeNum={comment.likeNum} replies={comment.replies}/>
-        )}
+        {comments.map((comment) => (
+          <Comment
+            userImagePath={comment.userImagePath}
+            username={comment.username}
+            commentText={comment.commentText}
+            likeNum={comment.likeNum}
+            replies={comment.replies}
+          />
+        ))}
       </div>
     </div>
   );
