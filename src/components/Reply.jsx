@@ -1,4 +1,3 @@
-
 export const Reply = ({ userImagePath, username, replyText, likeNum }) => {
   const showlike = likeNum > 0 ? true : false;
   return (
