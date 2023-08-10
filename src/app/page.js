@@ -21,6 +21,7 @@ export default function HomePage() {
           studentId="650610803"
           userImagePath="/profileImages/vanda.jpg"
           text="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
+          likeNum="100 คน"
         />
 
         {/* Comment Example */}
