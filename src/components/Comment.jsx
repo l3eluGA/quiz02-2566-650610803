@@ -37,6 +37,7 @@ export const Comment = ({
 
       {replies.map((comment, i) => (
         <Reply
+          key={i}
           userImagePath={replies[i].userImagePath}
           username={replies[i].username}
           replyText={replies[i].replyText}
